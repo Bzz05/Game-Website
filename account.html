@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sea of FTars</title>
+    <link rel="stylesheet" href="account.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="account.js"></script>
+</head>
+<body>
+    <nav class="nav">
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn"><i class="fas fa-bars"></i></label>
+        <label class="logo">Sea of FTars</label>
+        <ul>
+            <li><a href="home.html" target="_blank">home</a></li>
+            <li class="dropdown">
+                <a href="heroes.html" target="_blank">CHARACTERS <i class="fa fa-angle-down" id="down_arrow"></i></a>
+                <ul class="dropdown-menu">
+                  <li><a href="heroes.html" target="_blank">HEROES</a></li>
+                  <li>|</li>
+                  <li><a href="enemy.html" target="_blank">ENEMIES</a></li>
+                </ul>
+              </li>
+            <li><a href="fanart.html" target="_blank">fan art</a></li>
+            <li><a href="account.html">register</a></li>
+        </ul>
+    </nav>
+    <div class="nav-placeholder"></div>
+
+    <div class="wrapper">
+        <div class="login-box">
+            <h2>Register</h2>
+            <form id="login-form" onsubmit="return validateForm()">
+              <div class="form-group">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+                <div id="username-error" class="error-message"></div>
+              </div>
+              <div class="form-group">
+                <label for="country">Country:</label>
+                <select id="country" name="country" required>
+                  <option value="">Choose country</option>
+                  <option value="Indonesia">Indonesia</option>
+                  <option value="USA">USA</option>
+                </select>
+                <div id="country-error" class="error-message"></div>
+              </div>
+              <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <div id="email-error" class="error-message"></div>
+              </div>
+              <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+                <div id="password-error" class="error-message"></div>
+              </div>
+              <div class="form-group">
+                <input type="checkbox" id="terms" name="terms" required>
+                <label for="terms">I agree to the terms and conditions</label>
+                <div id="terms-error" class="error-message"></div>
+              </div>
+              <button type="submit">Register</button>
+            </form>
+          </div>
+    </div>
+
+    <footer>
+        <div class="f1">
+            <a href="https://www.twitch.tv"><i class="fa-brands fa-twitch"></i></a>
+            <a href="https://twitter.com"><i class="fa-brands fa-twitter"></i></a>
+            <a href="https://www.instagram.com"><i class="fa-brands fa-instagram"></i></a>
+            <a href="http://www.youtube.com"><i class="fa-brands fa-youtube"></i></a>
+        </div>
+        <div class="f2">
+            <div class="items">
+                <h1 class="title-footer">Sea of FTars</h1>
+                <h1 class="studio">efteStudio</h1>
+            </div>
+            <div class="items2">
+                <a class="tos">Terms of Service</a>
+                <a class="pp">Privacy Policy</a>
+            </div>
+        </div>
+        <div class="f3">
+            <p>© Copyright 2022. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

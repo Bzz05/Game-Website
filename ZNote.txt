@@ -1,0 +1,3 @@
+Assets are from: https://seaofstarsgame.co
+
+- Heroes and Enemies page: Drag to move from one character to another
